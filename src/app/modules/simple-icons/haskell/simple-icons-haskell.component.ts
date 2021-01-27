@@ -1,0 +1,13 @@
+import { Component, Input, OnInit } from '@angular/core';
+@Component({
+    selector: 'simple-icons-haskell',
+    template: `<svg class="simple-icons {{ className }}" [style.width]="size" [style.height]="size" [style.fill]="color" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Haskell icon</title><path d="M0 3.535L5.647 12 0 20.465h4.235L9.883 12 4.235 3.535zm5.647 0L11.294 12l-5.647 8.465h4.235l3.53-5.29 3.53 5.29h4.234L9.883 3.535zm8.941 4.938l1.883 2.822H24V8.473zm2.824 4.232l1.882 2.822H24v-2.822z"/></svg>`,
+    styles: []
+})
+export class SimpleIconsHaskellComponent implements OnInit {
+    @Input() size: string = '100%';
+    @Input() color: string = '#5D4F85';
+    @Input() className: string = 'simple-icons-haskell'
+    constructor() {}
+    ngOnInit(): void {}
+}
